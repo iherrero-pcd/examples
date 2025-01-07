@@ -1,0 +1,11 @@
+## MODULE.bazel
+
+module(name = "bazel_multirepo_example")
+
+include("//bzl:repos.MODULE.bazel")
+
+bazel_dep(name = "buildifier_prebuilt", version = "6.3.3", dev_dependency = True)
+bazel_dep(name = "rules_cc", version = "0.0.9")
+bazel_dep(name = "catch2", version = "3.4.0")
+bazel_dep(name = "googletest", version = "1.15.2", repo_name = "dep_gtest")
+
