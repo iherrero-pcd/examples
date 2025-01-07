@@ -1,0 +1,4 @@
+The goal of this example is to show how to build Verilog and SystemVerilog source code using the rules implemented by the community project called [rules_verilog](https://github.com/Lightelligence/rules_verilog).
+
+The example has been created starting from the folder [examples](https://github.com/Lightelligence/rules_verilog/tree/master/examples) and following directions from the [README.md](https://github.com/Lightelligence/rules_verilog/blob/master/README.md).
+

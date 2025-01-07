@@ -1,0 +1,13 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "rules_verilog",
+    urls = ["https://github.com/Lightelligence/rules_verilog/archive/v1.6.2.tar.gz"],
+    sha256 = "e4bdfbcfa0e2b72e064539de8509beb7b013ecf6eca3a9781356e18bdca61e42",
+    strip_prefix = "rules_verilog-1.6.2",
+)
+
+load("@rules_verilog//:deps.bzl", "verilog_dependencies")
+
+verilog_dependencies()
+
